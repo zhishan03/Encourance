@@ -14,6 +14,10 @@ def about():
 def profile():
     return render_template('profile.html')
 
+@app.route("/resources")
+def resources():
+    return render_template('resources.html')
+
 @app.route("/tracker", methods=['GET', 'POST'])
 def tracker():
     return render_template('tracker.html')

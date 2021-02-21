@@ -87,6 +87,7 @@ img {
 
 .showcase h1 {
     font-size: 40px;
+    font-weight: 900;
 }
 
 .showcase p {
@@ -105,6 +106,19 @@ img {
     border-radius: 10px;
 }
 
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-2deg);
+}
+
+
 /*****************************    About-us    ********************************/
 .container2{
     width: 1200px;
@@ -112,6 +126,7 @@ img {
     margin: 0 auto;
     background: #fff;
     margin-top: 15vh;
+    margin-bottom: 20vh;
   }
   .card{
     width: 250px;
@@ -311,14 +326,13 @@ img {
     font-family: "Lato", Helverica, sans-serif;
 }
 
-
 .header
 {
     background-color: #df7861;
-    font-weight: bold;
+    font-weight: 100;
     color: white;
     padding: 0.5rem 2rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .header__logo
@@ -328,17 +342,25 @@ img {
 
 .heading {
     display:block;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 2rem;
-    text-transform: uppercase;
+}
+
+.form__label { /*Meditate*/
+  display:block;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center; 
+  margin-bottom: 0.5rem;
 }
 
 .timer {
     display:block;
-    font-size: 4rem;
+    font-size: 10rem;
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 2rem;
 }
 
 .main{
@@ -346,19 +368,19 @@ img {
 }
 
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:block;
     row-gap: 1.5rem;
-    column-gap: 0.75rem;
     align-items: center;
+    text-align: center; 
     width: auto;
     font-size: 0.9rem;
 }
 
 .form__button-container {
-    display:grid;
+    display:block;
+    text-align: center;
     justify-content: center;
-    grid-column:1/4;
+    margin-bottom: 0.5rem;
 }
 
 .form__input{
@@ -376,6 +398,7 @@ img {
     padding: 10px 30px;
     border: 1px solid #000;
     background-color: #df7861;
+    margin-top: 0.5rem;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out;
 }
@@ -412,4 +435,30 @@ img {
 
 .progress--rest::-webkit-progress-bar {
     background-color:green;
+}
+
+/* Resources */
+.res {
+  position: absolute;
+}
+
+.health {
+  align-items: center;
+  width: 700px;
+  height: auto;
+  margin-left: 80%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.res img {
+  width: 40%;
+  height: 40%;
+  margin: 20px 30px;
+}
+
+.wellness {
+  font-size: 38px;
+  position: relative;
+  left: -75px;
 }
