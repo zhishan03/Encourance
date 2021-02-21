@@ -1,28 +1,28 @@
 {% extends 'base.html' %}
 
-{% block head %} 
+{% block head %}
 
 {% endblock %}
 
-{% block body %} 
+{% block body %}
 
 <!-- Showcase -->
 <section class="showcase">
-    <div class="container grid">
-        <div class="showcase-text">
-            <h1>Welcome to Encourance</h1>
-            <p>Balancing your professional and personal life can be difficult, but it's essential.
-                A good work-life balance has numerous positive effects, such as a lower risk of burnout and
-                a better sense of well-being. Encourance is aimed to foster its users' state of equilibrium 
-                by tracking their progress of meditation.
-            </p>
-            <a href="profile" class="btn btn-outline">Sign Up</a>
-            <a href="profile" class="btn btn-outline">Log In</a>
-        </div>
-        <div class="showcase-picture">
-            <img src="/static/relax.gif" alt="relax">
-        </div>
+  <div class="container grid">
+    <div class="showcase-text">
+      <h1>Welcome to Encourance</h1>
+      <p>Balancing your professional and personal life can be difficult, but it's essential.
+        A good work-life balance has numerous positive effects, such as a lower risk of burnout and
+        a better sense of well-being. Encourance is aimed to foster its users' state of equilibrium
+        by tracking their progress of meditation.
+      </p>
+      <a href="profile" class="btn btn-outline">Sign Up</a>
+      <a href="profile" class="btn btn-outline">Log In</a>
     </div>
+    <div class="showcase-picture">
+      <img src="/static/relax.gif" alt="relax">
+    </div>
+  </div>
 </section>
 
 <!-- Encourance's Mission -->
@@ -38,7 +38,9 @@
 <p class="text-center">
   According to Mayo Clinic, "meditation can give you a sense of <br>
   calm, peace and balance that can benefit both your emotional<br>
-  well-being and your overall health" <a href="https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858">(Mayo Clinic, 2021)</a><br>
+  well-being and your overall health" <a
+    href="https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858">(Mayo Clinic,
+    2021)</a><br>
   Encourance encourages its users to practice daily meditation<br>
   to improve their mental, emotional, and physical wellbeing.<br>
 </p>
@@ -50,11 +52,11 @@
   <div class="quiz-container">
     <div id="quiz"></div>
   </div>
-<!-- <div class="buttons"> -->
+  <!-- <div class="buttons"> -->
   <button id="previous">Previous Question</button>
   <button id="next">Next Question</button>
   <button id="submit">Submit Quiz</button>
-<!-- </div> -->
+  <!-- </div> -->
   <div class="result">
     <div id="results"></div>
   </div>
@@ -62,92 +64,93 @@
 
 <!-- Encourance Team -->
 <div class="container2">
-    <h2 class="md text-center my-2">Our Team</h2>
-    <div class="card">
-      <div class="content">
-        <div class="front">
-          <div class="team-image">
-            <img src="/static/joy.jpg">
-          </div>
-          <br><br>
-          <span>Joy Chen</span>
+  <h2 class="md text-center my-2">Our Team</h2>
+  <div class="card">
+    <div class="content">
+      <div class="front">
+        <div class="team-image">
+          <img src="/static/joy.jpg">
         </div>
-        <div class="back">
-            <br><br><br><br><br>
-            <span>Joy is a second-year Mathematics Undergraduate with computing option at University of Waterloo</span>
-        </div>
+        <br><br>
+        <span>Joy Chen</span>
+      </div>
+      <div class="back">
+        <br><br><br><br><br>
+        <span>Joy is a second-year Mathematics Undergraduate with computing option at University of Waterloo</span>
       </div>
     </div>
-    <div class="card">
-      <div class="content">
-        <div class="front">
-          <div class="team-image">
-            <img src="/static/yanna.png">
-          </div>
-          <br><br>
-          <span>Alyanna Santos</span>
-        </div>
-        <div class="back">
-            <br><br><br><br><br>
-            <span>Alyanna is a second-year Computer Science Undergraduate Student at Ryerson University</span>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <div class="front">
-          <div class="team-image">
-            <img src="/static/ginny.jpg">
-          </div>
-          <br><br>
-          <span>Ginny Dang</span>
-        </div>
-        <div class="back">
-                <br><br><br><br><br>
-                <span>Ginny is ....</span>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-        <div class="content">
-          <div class="front">
-            <div class="team-image">
-              <img src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
-            </div>
-            <br><br>
-            <span>Lily Mei</span>
-          </div>
-          <div class="back">
-                <br><br><br><br><br>
-                <span>Lily is ....</span>
-          </div>
-        </div>
-      </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="footer py-5">
-    <div class="container grid grid-3">
-        <div>
-            <h1>Encourance
-            </h1>
-            <p>Copyright &copy; 2021</p>
+  <div class="card">
+    <div class="content">
+      <div class="front">
+        <div class="team-image">
+          <img src="/static/yanna.png">
         </div>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./">About Us</a></li>
-                <li><a href="profile">Profile</a></li>
-                <li><a href="res">Resources</a></li>
-                <li><a href="timer">Timer</a></li>
-            </ul>
-        </nav>
-        <div class="social">
-            <a href="#"><i class="fab fa-github fa-2x"></i></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-        </div>
+        <br><br>
+        <span>Alyanna Santos</span>
+      </div>
+      <div class="back">
+        <br><br><br><br><br>
+        <span>Alyanna is a second-year Computer Science Undergraduate Student at Ryerson University</span>
+      </div>
     </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="front">
+        <div class="team-image">
+          <img src="/static/ginny.jpg">
+        </div>
+        <br><br>
+        <span>Ginny Dang</span>
+      </div>
+      <div class="back">
+        <br><br><br><br><br>
+        <span>Ginny is an undergrad student at University of Central Arkansas majoring in Computer Science</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="front">
+        <div class="team-image">
+          <img
+            src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+        </div>
+        <br><br>
+        <span>Lily Mei</span>
+      </div>
+      <div class="back">
+        <br><br><br><br><br>
+        <span>Lily is ....</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer py-5">
+  <div class="container grid grid-3">
+    <div>
+      <h1>Encourance
+      </h1>
+      <p>Copyright &copy; 2021</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./">About Us</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="res">Resources</a></li>
+        <li><a href="timer">Timer</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="#"><i class="fab fa-github fa-2x"></i></a>
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+  </div>
 </footer>
 {% endblock %}

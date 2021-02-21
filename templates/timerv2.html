@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block head %} {% endblock %}
+
+{% block body %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #progress {
+        width: 50%;
+        height: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid #d4e2d4;
+    }
+
+    #progress-bar {
+        height: 20px;
+        background-color: #d4e2d4;
+        border-radius: 30px;
+    }
+
+    button {
+        margin: 0 auto 20px;
+    }
+
+    input {
+        margin: 5px;
+    }
+</style>
+
+<div class="text-center">
+    <br><br>
+    <h1 class="heading">
+        <bold>Meditation Timer ⏳</bold>
+    </h1>
+    <p1>How long do you want to practice meditation?</p1>
+    <form id="frm1">
+        <br>
+        <input type="text" name="fname" value="" placeholder="Recommended: 01" requires>Hrs<br>
+        <input type="text" name="lname" value="" placeholder="Recommended: 15" required>Min<br><br>
+    </form>
+
+    <button onclick="myFunction()">Start Meditating</button>
+
+    <div class="text-center" id="progress">
+        <div id="progress-bar"></div>
+    </div>
+
+    <h2 id="demo"></h2>
+</div>
+<script>
+    var t = 0;
+    function myFunction() {
+        var x = document.getElementById("frm1");
+        hr = x.elements[0].value;
+        min = x.elements[1].value
+
+        window.t = hr * 3600 + min * 60;
+        window.per = window.t;
+        timer();
+    }
+
+    function timer() {
+        var temp = window.t;
+        window.t = window.t - 1;
+        var h = Math.floor(temp / 3600);
+        var m = Math.floor((temp % 3600) / 60);
+        var s = Math.floor((temp - h * 3600 - m * 60));
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("demo").innerHTML = h + " Hours, " + m + "Minutes, " + s + " Seconds";
+        document.getElementById("progress-bar").style.width = (temp * 100) / (window.per) + "%";
+
+        var t = setTimeout(timer, 1000);
+
+        if (temp < 900) {
+            document.getElementById("progress-bar").style.backgroundColor = "red";
+            document.getElementById("progress").style.borderColor = "red";
+        }
+        if (temp < 0) {
+            clearInterval(t);
+            document.getElementById("demo").innerHTML = "Well done!";
+        }
+    }
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i }
+        return i;
+    }
+</script>
+
+{% endblock %}

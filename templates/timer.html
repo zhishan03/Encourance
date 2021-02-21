@@ -5,28 +5,19 @@
 {% block body%}
 <br>
 <main class="main">
-    <h1 class="heading"><bold>Meditation Timer &#9203;</bold></h1>
+    <h1 class="heading">
+        <bold>Meditation Timer &#9203;</bold>
+    </h1>
     <span class="timer" id=timer>00s</span>
-    <progress
-        max="45" 
-        value="45" 
-        class="progress progress--set"
-        id="progressBar"
-    ></progress>
+    <progress max="45" value="45" class="progress progress--set" id="progressBar"></progress>
 </main>
 
-    <form class="form" method="post">
-        <label class="form__label" for="meditate">Set Meditate Time</label>
-        <input
-            class="form__input"
-            type="number"
-            name="meditate"
-            id="meditate"
-            value="30"
-        >
-        <div class="form__button-container">
-            <button class="button" type="submit">Start!</button>
-        </div>
-    </form>
+<form class="form" method="post">
+    <label class="form__label" for="meditate">Set Meditate Time</label>
+    <input class="form__input" type="number" name="meditate" id="meditate" value="30">
+    <div class="form__button-container">
+        <button class="button" type="submit">Start!</button>
+    </div>
+</form>
 
 {% endblock %}
