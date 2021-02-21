@@ -21,11 +21,11 @@ The resources section puts together most up-to-date and reliable mental health i
 We built Encourance using HTML5 and CSS for the front end,
 Python (Flask) and JavaScript for the back end, as well as GitHub and VSCode (LiveShare) for source code management.
 
-## Challenges we ran into 🦟
-We had difficulties with making our css code modular with Flask. All the css code is jammed into one file at the moment, which can get very unnecessarily hard to maintain once we add more features to the web application. 
+Challenges we ran into 🦟
+It is our first time attending a hackathon, so there were a lot of challenges on the way.We had difficulties with making our css code modular with Flask. All the css code is jammed into one file at the moment, which can get very unnecessarily hard to maintain once we add more features to the web application.
 
-## Accomplishments that we're proud of 🏆st challenge was 
-setting up with flask and learning how to style with CSS along the way.
+Accomplishments that we're proud of 🏆
+Our team had little to no experience with web development, so we are proud that we have a functional website up and running with a responsive and engaging user interface! Overall, we are proud that we learned web development fundamentals using Flask with CSS and HTML in less than 2 hours.
 
-m## What's next for Encourance 🧘
-This can very possibly be developed into a mobile application with a responsive and engaging user interface  Overall, we are proud that we learned web development fundamentals using Flask with CSS and HTML in less than 2 hours. to reach a larger group of audience. 
+What's next for Encourance 🧘
+This can very possibly be developed into a mobile application with a responsive and engaging user interface Overall, we are proud that we learned web development fundamentals using Flask with CSS and HTML in less than 2 hours. to reach a larger group of audience.
