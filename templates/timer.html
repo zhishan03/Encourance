@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %} {% endblock %}
+
+{% block body%}
+
+<main class="main">
+    <h2 class="heading">Meditation Timer</h2>
+    <span class="timer" id=timer>00s</span>
+    <progress
+        max="45" 
+        value="45" 
+        class="progress progress--set"
+        id="progressBar"
+    ></progress>
+</main>
+
+    <form class="form" method="post">
+        <label class="form__label" for="meditate">Meditate:</label>
+        <input
+            class="form__input"
+            type="number"
+            name="meditate"
+            id="meditate"
+            value="30"
+        >
+        <div class="form__button-container">
+            <button class="button" type="submit">Start!</button>
+        </div>
+    </form>
+
+{% endblock %}

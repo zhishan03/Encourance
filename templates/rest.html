@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Meditation Timer</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="header"><h1 class="header__logo">Meditation Timer</h1></div>
+    <main class="main">
+        <h2 class="heading">Rest</h2>
+        <span class="timer" id="timer">15s</span>
+        <progress
+            max="15"
+            value="15"
+            class="progress progress--rest"
+            id="progressBar"
+        ></progress>
+    </main>
+
+    <script type="application/javascript">
+        const timerElement = document.getElementById("timer");
+        const progressBar = document.getElementById("progressBar")
+
+        let timerCounter = progressBar.max;
+
+        const interval = setInterval(() => {
+            if (timerCounter <= 1) {
+                clearInterval(interval);
+            }
+        }, 1000)
+
+        let timerCounter = progressBar.max;
+
+        const interval = setInterval(() => {
+            if (timerCounter <= 1) {
+                
+            }
+        })
+
+        let timerCounter = progressBar.max;
+
+        const interval = setInterval(() => {
+            if (timerCounter <= 1) {
+                
+            }
+        })
+    </script>
+
+
+</body>
