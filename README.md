@@ -29,7 +29,6 @@ a lot of challenges on the way. The biggest challenge was
 setting up with flask and learning how to style with CSS along the way.
 
 ## Accomplishments that we're proud of 🏆
-Our team had little to no experience with web development, so 
 we are proud that we have a functional website up and running with a responsive and engaging user interface! Overall, we are proud that we learned web development fundamentals using Flask with CSS and HTML in less than 2 hours. 
 
 ## What we learned 📖
